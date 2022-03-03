@@ -12,7 +12,10 @@ let score = Number(document.querySelector(".score").innerHTML);
 let resmid = document.querySelector(".number");
 let highscore = Number(document.querySelector(".highscore").innerHTML);
 
-if (guess < rand){
+if (guess > 20 || guess <= 0){
+    alert('Apenas Números entre 1 e 20');
+}
+else if (guess < rand){
     msg.innerHTML="muito baixo";
     document.querySelector(".score").innerHTML = score - 1 ; // diminui 1 ponto por erro 
     
