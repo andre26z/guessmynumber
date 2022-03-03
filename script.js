@@ -13,7 +13,7 @@ let resmid = document.querySelector(".number");
 let highscore = Number(document.querySelector(".highscore").innerHTML);
 
 if (guess > 20 || guess <= 0) {
-    alert('Apenas Números entre 1 e 20!')
+    alert('Apenas Números entre 1 e 20!');
 }
 else if (guess < rand){
     msg.innerHTML="muito baixo";
